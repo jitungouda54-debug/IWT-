@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Library Store</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .books {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .book {
+            background-color: white;
+            width: 220px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .book img {
+            width: 150px;
+            height: 200px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .book button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .book button:hover {
+            background-color: #1f6391;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>📚 Online Library Store</h1>
+    <p>Find your favorite books</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Library</a>
+</nav>
+
+<div class="container">
+    <h2 style="text-align:center;">Available Books</h2>
+
+    <div class="books">
+        <div class="book">
+            <img src="https://via.placeholder.com/150x200">
+            <h3>Learn HTML</h3>
+            <p class="price">₹299</p>
+            <button onclick="window.location.href='about.html'">
+                View Details
+            </button>
+        </div>
+
+        <div class="book">
+            <img src="https://via.placeholder.com/150x200">
+            <h3>CSS Mastery</h3>
+            <p class="price">₹399</p>
+            <button onclick="window.location.href='about.html'">
+                View Details
+            </button>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Online Library Store</p>
+</footer>
+
+</body>
+</html>
