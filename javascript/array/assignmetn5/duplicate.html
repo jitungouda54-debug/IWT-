@@ -1,0 +1,18 @@
+<!-- remove duplicate element from the an array and print new aray using splice -->
+<html>
+    <body>
+        <script>
+            var a = new Array(7,3,4,5,7);
+            for(var i=0; i<a.length; i++){
+                for (j=i+1;j<a.length;j++){
+                    if(a[i] == a[j]){
+                        a.splice(j,1);
+                        j--;
+                    }
+                }
+            }
+            document.write("Array after removing duplicates: " + a);
+
+        </script>
+    </body>
+</html>

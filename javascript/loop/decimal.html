@@ -1,0 +1,18 @@
+<!--Wap to input a decimal number and find its binary equivalent using while loop ? -->
+<html>
+    <head>
+        <body>
+            <script>
+                var num = 5,prd= 1 , sum =0,rem;
+                while(num!=0){
+                    rem = num % 2;
+                    sum = sum+rem*prd;
+                    prd= prd*10;
+                    num = num / 2;
+                }
+                document.write("The binary equivalent is: "+sum);
+             
+            </script>
+        </body>
+    </head>
+</html>

@@ -1,0 +1,20 @@
+<!-- second latrgest element without sorting method -->
+<html>
+    <body>
+        <script>
+            var a = new Array(7,3,6,54,7,20);
+            var largest = a[0];
+            var secondLargest = a[0];
+            for(var i=1; i<a.length; i++){
+                if(a[i] > largest){
+                    secondLargest = largest;
+                    largest = a[i];
+                }
+                else if(a[i] > secondLargest && a[i] != largest){
+                    secondLargest = a[i];
+                }
+            }
+            document.write("Second largest element: " + secondLargest);
+        </script>
+    </body>
+</html>

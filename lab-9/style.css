@@ -1,0 +1,41 @@
+.head{
+    color:orange;
+	letter-spacing:3px;
+	background-color:black;
+	font-size:30px;
+	text-align:left;}
+.bar{
+    color:white;
+	font-size:15px;}
+.btn1{
+	color:orange;
+	background-color:black;
+	padding:6px;
+	margin:10px;
+	border-color:orange;
+	}
+.btn2{
+	color:black;
+background-color:orange;
+padding:6px;}
+.btn3{
+	color:white;
+background-color:grey;
+padding:5px;}
+.mid{
+color:white;
+font-size:50px;
+padding:30px;
+text-align:left;}
+.mid2{
+	color:grey;
+font-size:20px;}
+.btn4{
+	color:black;
+	background-color:orange;
+padding:10px;}
+.btn5{
+	color:orange;
+	background-color:black;
+padding:10px;
+border-color:orange;}

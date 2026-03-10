@@ -1,0 +1,18 @@
+<!-- Wap to find the sum of all even and product of all odd numbers between 1 to 50 using for loop -->
+<html>
+    <head> 
+        <script>
+            let sum = 0;
+            let product = 1;
+            for (let i = 1; i <= 50; i++) {
+                if (i % 2 == 0) {
+                    sum += i;
+                } else {
+                    product *= i;
+                }
+            }
+            document.write("Sum of even numbers: " + sum + "<br>");
+            document.write("Product of odd numbers: " + product);
+        </script>
+    </head>
+</html>

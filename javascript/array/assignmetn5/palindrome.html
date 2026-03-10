@@ -1,0 +1,21 @@
+<!-- check whether the number is palindrome ir not -->
+ <html>
+    <body>
+        <script>
+            let num = parseInt(prompt("Enter a number:"));
+            let temp = num;
+            let rev = 0;
+            while(temp > 0){
+                let rem = temp % 10;
+                rev = rev * 10 + rem;
+                temp = Math.floor(temp / 10);
+            }
+            if(num === rev){
+                document.write(num + " is a palindrome number.");
+            }
+            else{
+                document.write(num + " is not a palindrome number.");
+            }
+        </script>
+    </body>
+ </html>

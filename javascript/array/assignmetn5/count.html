@@ -1,0 +1,17 @@
+<!--wap t o count how many times each element occurs in an array -->
+<html>
+    <body>
+        <script>
+            var a = new Array(7,3,4,5,7);
+            var  c = 0;
+            for(var i=0; i<a.length; i++){
+                for (j=0;j<a.length;j++){
+                    if(a[i] == a[j]){
+                        c++;
+                    }
+                }
+                document.write(a[i] + " occurs " + c + " times<br>");
+            }
+        </script>
+    </body>
+</html>

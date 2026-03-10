@@ -1,0 +1,22 @@
+<!-- write a  functionn check whether  a number is Amstrong numbber or not -->
+ <html>
+    <script>
+        function isArmstrong(num){
+            let temp = num;
+            let sum = 0;
+            while(temp > 0){
+                let rem = temp % 10;
+                sum += rem * rem * rem;
+                temp = Math.floor(temp / 10);
+            }
+            return sum === num;
+        }
+        let number = parseInt(prompt("Enter a number:"));
+        if(isArmstrong(number)){
+            document.write(number + " is an Armstrong number.");
+        }
+        else{
+            document.write(number + " is not an Armstrong number.");
+        }
+    </script>
+ </html>

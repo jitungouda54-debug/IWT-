@@ -1,0 +1,16 @@
+<!-- fibbonacci series using for loop -->
+ <html>
+    <head>
+        <script>
+            let n = parseInt(prompt("Enter the number of terms"));
+            let a = 0, b = 1, c;
+            document.write("Fibbonacci series: ");
+            for (let i = 1; i <= n; i++) {
+                document.write(a + " ");
+                c = a + b;
+                a = b;
+                b = c;
+            }
+        </script>
+    </head>
+ </html>
