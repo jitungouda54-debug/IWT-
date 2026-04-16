@@ -13,7 +13,7 @@
         <%
             try {
                 Class.forName("org.postgresql.Driver");
-                Connection con = DriverManager.getConnection("jdbc:postgresql://192.168.1.17/cse_db24", "24bcsa09", "24bcsa09");
+                Connection con = DriverManager.getConnection("jdbc:postgresql://192.168.1.17/cse_db24", "24bcsh02", "24bcsh02");
                 Statement st = con.createStatement();
                 ResultSet rs = st.executeQuery("SELECT * FROM student01");
                 while(rs.next()){

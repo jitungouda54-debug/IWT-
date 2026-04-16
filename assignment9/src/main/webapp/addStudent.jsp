@@ -24,8 +24,8 @@
             try {
             	String driver = "org.postgresql.Driver";
     			String url = "jdbc:postgresql://192.168.1.17/cse_db24";
-    			String username = "24bcsa09";
-    			String password = "24bcsa09";
+    			String username = "24bcsa02";
+    			String password = "24bcsa02";
     			Class.forName(driver);
     			Connection con = DriverManager.getConnection(url, username, password);
     			if(con!=null)
