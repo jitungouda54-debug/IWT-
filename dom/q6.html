@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Currency Converter</title>
+
+<style>
+
+body{
+font-family: Arial;
+margin:40px;
+}
+
+.container{
+display:flex;
+justify-content:space-between;
+}
+
+.left{
+width:55%;
+}
+
+.right{
+width:35%;
+border:1px solid #ddd;
+padding:20px;
+border-radius:8px;
+box-shadow:0px 0px 5px gray;
+}
+
+select,input{
+width:100%;
+padding:8px;
+margin:8px 0;
+}
+
+button{
+width:100%;
+padding:10px;
+background-color:#1f3b57;
+color:white;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background-color:#162b40;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="left">
+
+<h3>6. Currency Converter</h3>
+
+<p>
+You are tasked with building a currency converter app that allows users
+to convert amounts between different currencies. The app should have
+dropdown menus for selecting the source and target currencies, an input
+field for entering the amount to be converted, and an output field for
+displaying the converted amount.
+</p>
+
+</div>
+
+
+<!-- RIGHT SIDE CONVERTER -->
+<div class="right">
+
+<h2>Currency Converter</h2>
+
+<label>From</label>
+<select id="from">
+<option>USD</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>INR</option>
+<option>AUD</option>
+</select>
+
+<input type="number" id="amount" placeholder="Enter amount">
+
+<label>To</label>
+<select id="to">
+<option>INR</option>
+<option>USD</option>
+<option>EUR</option>
+<option>GBP</option>
+<option>AUD</option>
+</select>
+
+<h3 id="result"></h3>
+
+<button onclick="convert()">Convert</button>
+
+</div>
+
+</div>
+
+<script>
+
+const rates={
+USD:{EUR:0.93,GBP:0.82,INR:82.74,AUD:1.47},
+EUR:{USD:1.08,GBP:0.88,INR:89.06,AUD:1.58},
+GBP:{USD:1.22,EUR:1.14,INR:101.5,AUD:1.80},
+INR:{USD:0.012,EUR:0.011,GBP:0.0098,AUD:0.018},
+AUD:{USD:0.68,EUR:0.63,GBP:0.55,INR:55.87}
+};
+
+function convert(){
+
+let amount=document.getElementById("amount").value;
+let from=document.getElementById("from").value;
+let to=document.getElementById("to").value;
+
+if(amount=="" || from=="" || to==""){
+alert("Please fill all fields");
+return;
+}
+
+if(from==to){
+alert("Currencies cannot be same");
+return;
+}
+
+let result=amount * rates[from][to];
+
+document.getElementById("result").innerHTML="Converted: "+result;
+
+}
+
+</script>
+
+</body>
+</html>

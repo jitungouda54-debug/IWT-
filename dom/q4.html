@@ -1,0 +1,33 @@
+<!-- create a simple counter with an input box and two buttons :+ and - (+ increase the value by one and - decrease the value by one) and value can not be below 0 -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h2>Counter</h2>
+    <input type="text" id="counter" value="0" readonly>
+    <button id="increment">+</button>
+    <button id="decrement">-</button>
+    <script>
+        const counterInput = document.getElementById('counter');
+        const incrementButton = document.getElementById('increment');
+        const decrementButton = document.getElementById('decrement');
+
+        incrementButton.addEventListener('click', function() {
+            let value = parseInt(counterInput.value);
+            counterInput.value = value + 1;
+
+        }); 
+        decrementButton.addEventListener('click', function() {
+            let value = parseInt(counterInput.value);
+            if (value > 0) {
+                counterInput.value = value - 1;
+            }
+        });
+    </script>
+    </script>
+ </body>
+ </html>

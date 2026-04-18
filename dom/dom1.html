@@ -1,0 +1,22 @@
+<!-- create a heading<h2> with the text "Hello, World!" using javaScript ,change text welcome to dom manipulation vwhen a button is clicked-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="heading">Hello, World!</h2>
+    <button id="changeText">Change Text</button>
+    <script>
+        const button = document.getElementById('changeText');
+        const heading = document.getElementById('heading');
+        button.addEventListener('click', function() {
+            heading.textContent = 'Welcome to DOM Manipulation';
+        });
+
+
+</script>
+</body>
+</html>
