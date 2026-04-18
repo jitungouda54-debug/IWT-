@@ -1,0 +1,67 @@
+* {
+    margin: 2;
+    padding: 1;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #120404;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #120404;
+    padding: 12px 30px;
+}
+
+
+.nav-title {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+.nav-center {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-center li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-center li a:hover {
+    color: #38bdf8;
+}
+
+
+.goldrightbg {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.goldrightbg li a{
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: GOLD;
+}
+
+.marketbutton
+{
+    color: rgb(158, 192, 225);
+    
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}

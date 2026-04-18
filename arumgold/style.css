@@ -1,0 +1,39 @@
+.image
+{
+    width: 150px;
+    border-radius: 200px;
+    height : auto;
+    border: 3px solid rgb(17, 239, 51);
+    
+}
+.pfp
+{
+    margin: auto;
+    height: auto;
+    width: 300px;
+    border-color: black;
+    border-radius: 10px;
+    box-shadow: 0 12px 30px rgba(94, 90, 90, 0.3);
+    
+}
+.mail
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 15px;
+}
+.call
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 15px;
+}
+#p1
+{
+    font-size: 15px;
+    font-family: sans-serif;
+}
